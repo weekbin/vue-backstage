@@ -15,12 +15,25 @@ const constantRoutes = [
     path: '/',
     component: Layout,
     name: 'Layout',
-    redirect: '/dashboard',
-    children: [{
-      path: 'dashboard',
-      name: 'Dashboard',
-      component: () => import('@/views/dashboard')
-    }]
+    redirect: '/task',
+    children: [
+      {
+        path: 'task',
+        name: 'Task',
+        component: () => import('@/views/task'),
+        meta: {
+          title: '添加任务'
+        }
+      },
+      {
+        path: 'test',
+        name: 'Test',
+        component: () => import('@/views/test'),
+        meta: {
+          title: '测试目录'
+        }
+      }
+    ]
   }
 ]
 
