@@ -1,11 +1,10 @@
 <template>
-  <el-container class="screen-height">
-    login
-  </el-container>
+  <div>dashboard</div>
 </template>
 
 <script>
 export default {
+  name: 'Dashboard',
   data() {
     return {}
   }
@@ -13,8 +12,4 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.screen-height{
-  height: 100vh;
-  overflow: hidden;
-}
 </style>
